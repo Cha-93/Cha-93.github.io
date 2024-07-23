@@ -1,0 +1,483 @@
+body{
+    background-color: #EDEDED;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.logo{
+    position: absolute;
+    top: 50px;
+    left: 50px;
+}
+
+
+/*  HEADER SECTION */
+header {
+    width: 100%;
+    height: 667px;
+    background-image: url('../assets/images/header.jpg');
+    background-size: cover;
+    padding: 0 100px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 65px;
+}
+
+header nav{
+    height: 125px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+header .header-title{
+    color: yellow;
+    text-align: center;
+}
+
+header .header-container{
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px;
+    gap: 25px;
+}
+
+header .search-container{
+    display: flex;
+    padding: 0 250px;
+    height: 75px;
+}
+
+header .search-container input{
+    flex-grow: 1;
+    background-color: #FFF;
+    border: none;
+    border-radius: 15px 0 0 15px;
+    padding-left: 15px;
+}
+
+header .search-container button{
+    border: none;
+    background-color: #FFF;
+    border-radius: 0 15px 15px 0;
+}
+
+header .search-container button img{
+    padding: 15px;
+    border-radius: 15px;
+    background-color: black;
+}
+
+
+/* RECEIES SECTION */
+.recipes-list{
+    background-color: lightgray;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 0 150px;
+}
+
+.recipe{
+    background-color: #FFF;
+    border-radius: 20px 20px 15px 15px;
+    width: 400px;
+    height: 731px;
+}
+
+.recipe .recipe-header{
+    position: relative;
+}
+
+.recipe .recipe-header span{
+    position: absolute;
+    border-radius: 15px;
+    background-color: yellow;
+    padding: 5px 15px;
+    font-size: 0.8rem;
+    top: 10px;
+    right: 10px;
+}
+
+.recipe .recipe-header img{
+    width: 400px;
+    height: 253px;
+    border-radius: 21px 21px 0 0;
+    object-fit: cover;
+}
+
+.recipe .recipe-content{
+    padding: 20px;
+}
+
+.recipe .recipe-content .recipe-title{
+    font-size: 1.5rem;
+    margin: 15px 0;
+}
+
+.recipe .recipe-content .recipe-description-container{
+
+}
+
+.recipe .recipe-content .recipe-description-container p{
+    max-height: 100px;
+    overflow: overlay;    
+}
+
+.recipe .recipe-content .recipe-description-container .recipe-description-title{
+    font-size: 0.8rem;
+}
+
+.recipe .recipe-content .recipe-ingredients-container{
+    margin: 25px 0;
+}
+
+.recipe .recipe-content .recipe-ingredients-container .recipe-ingredients-title{
+    font-size: 0.8rem;
+}
+
+.recipe .recipe-content .recipe-ingredients-container .recipe-allIngredients{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.recipe .recipe-content .recipe-ingredients-container .recipe-allIngredients div{
+    width: 50%;
+    min-height: 50px;
+    margin: 5px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.recipe .recipe-content .recipe-ingredients-container .recipe-allIngredients .ingredient-name{
+    font-weight: bold;
+}
+
+.recipe .recipe-content .recipe-ingredients-container .recipe-allIngredients .ingredient-value{
+    
+}
+
+
+
+
+
+/* .hero-content {
+    z-index: 10;
+    padding: 20px;
+}
+.hero-content h1 {
+    color: #FFD15B;
+    font-family: 'Anton';
+    font-weight: bold;
+    font-size: 44px;
+}
+
+.background {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../assets/images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px 10px;
+    width: 955px;
+}
+
+.search-input {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 25px;
+}
+
+.search-button {
+    background-color: #1B1B1B;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#loupe{
+    width: 20px;
+    height: 20px;
+}
+
+
+
+
+
+#main{
+    width: 100%;
+    padding: 20px 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+#filters-bar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
+#filters{
+
+}
+
+#recipes-number{
+    font-family: 'Anton';
+    font-size: 21px;
+}
+
+
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: #fff;
+    color: black;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.arrow-down {
+    margin-left: 8px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0 2px 5px rgba(26, 21, 21, 0.1);
+    z-index: 1;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.dropdown-content.show {
+    display: block;
+}
+
+.dropdown-content input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.dropdown-content ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dropdown-content ul li {
+    padding: 8px 0;
+    cursor: pointer;
+}
+
+.dropdown-content ul li:hover {
+    background-color: #f0f0f0;
+}
+
+
+
+.recipes-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.time{
+    position: absolute;
+    background-color: #FFD15B;
+    padding: 0px 15px;
+    border-radius: 100px;
+    top: 10px;
+    right: 10px;
+}
+
+.recipe{
+    font-family: "Manrope";
+    height: 100%;
+    background-color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    border-radius: 21px;
+
+    width: 380px;
+    max-width: 380px;
+
+    height: 731px;
+    max-height: 731px;
+}
+
+.recipe-image{
+    width: 380px;
+    max-width: 380px;
+
+    height: 253px;
+    max-height: 253px;
+
+    border-radius: 21px 21px 0 0;
+    object-fit: cover;
+}
+
+.recipe-title{
+    font-family: "Anton";
+    font-size: 18px;
+    padding-bottom: 20px;
+}
+
+.second-block{
+    padding: 20px;
+}
+
+.recipe-label{
+    color: #7A7A7A;
+    padding-bottom: 15px;
+    font-size: 12px;
+}
+
+.recipe p,
+.recipe label{
+    font-size: 14px;
+}
+
+.ingredient-value{
+    color: #7A7A7A;
+}
+
+.recipe-ingredients-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.ingredients-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 20px;
+}
+
+.ingredients-container div{
+    display: flex;
+    flex-direction: column;
+}
+
+.ingredients-container div:last-child{
+    padding-right: 50px;
+} */
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header-title h1 {
+    text-align: center;
+}
+.search-container {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.search-input {
+    padding: 10px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.search-button {
+    background-color: #f8f8f8;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.search-button img {
+    width: 20px;
+    height: 20px;
+}
+.filters-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border-bottom: 1px solid #ddd;
+}
+.filters {
+    display: flex;
+    gap: 20px;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropbtn {
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.dropdown-content input {
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.dropdown-content ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+.dropdown-content li {
+    padding: 5px 0;
+    cursor: pointer;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+#recipes-number {
+    font-weight: bold;
+}
