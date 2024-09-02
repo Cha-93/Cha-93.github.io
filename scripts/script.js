@@ -2049,7 +2049,7 @@ recipes.forEach(recipe => {
     recipeHeader.appendChild(recipeTime);
 
     let recipeImg = document.createElement("img");
-    recipeImg.setAttribute('src', `../assets/images/recipes/Recette${recipe.id}.jpg`);
+    recipeImg.setAttribute('src', `/les-petits-plats/assets/images/recipes/Recette${recipe.id}.jpg`);
     recipeHeader.appendChild(recipeImg);
     // --------------
 
