@@ -46,7 +46,6 @@ header .header-container{
 
 header .search-container{
     display: flex;
-    padding: 0 250px;
     height: 75px;
 }
 
@@ -55,7 +54,6 @@ header .search-container input{
     background-color: #FFF;
     border: none;
     border-radius: 15px 0 0 15px;
-    padding-left: 15px;
 }
 
 header .search-container button{
@@ -67,7 +65,6 @@ header .search-container button{
 header .search-container button img{
     padding: 15px;
     border-radius: 15px;
-    background-color: black;
 }
 
 
@@ -162,7 +159,10 @@ header .search-container button img{
     
 }
 
-
+#loupe{
+    background-color: white;
+    padding: 7px;
+}
 
 
 
@@ -416,22 +416,11 @@ header .search-container button img{
     border: 1px solid #ccc;
     border-radius: 4px;
 }
-.search-button {
-    background-color: #f8f8f8;
-    border: none;
-    cursor: pointer;
-    margin-left: 10px;
-}
-.search-button img {
-    width: 20px;
-    height: 20px;
-}
 .filters-bar {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 10px;
-    background-color: #f8f8f8;
     border-bottom: 1px solid #ddd;
 }
 .filters {
