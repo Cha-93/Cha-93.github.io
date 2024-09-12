@@ -35,30 +35,31 @@
                 <div class="dropdown">
                     <button class="dropbtn">Ingrédients</button>
                     <div class="dropdown-content">
-                        <button onclick="toggleFilter('ingredient', 'jus de citron')">Jus de citron</button>
-                        <button onclick="toggleFilter('ingredient', 'glaçons')">Glaçons</button>
-                        <button onclick="toggleFilter('ingredient', 'tomate')">Tomate</button>
-                        <button onclick="toggleFilter('ingredient', 'poulet')">Poulet</button>
-                        <button onclick="toggleFilter('ingredient', 'poivron rouge')">Poivron rouge</button>
-                        <button onclick="toggleFilter('ingredient', 'thon en miettes')">Thon en miettes</button>
-                        <button onclick="toggleFilter('ingredient', 'vinaigrette')">Vinaigrette</button>
+                        <button class="filter-btn" data-ingredient="jus de citron">Jus de citron</button>
+                        <button class="filter-btn" data-ingredient="glaçons">Glaçons</button>
+                        <button class="filter-btn" data-ingredient="tomate">Tomate</button>
+                        <button class="filter-btn" data-ingredient="poulet">Poulet</button>
+                        <button class="filter-btn" data-ingredient="poivron rouge">Poivron rouge</button>
+                        <button class="filter-btn" data-ingredient="thon en miettes">Thon en miettes</button>
+                        <button class="filter-btn" data-ingredient="vinaigrette">Vinaigrette</button>
                     </div>
+                    
                 </div>
 
                 <div class="dropdown">
                     <button class="dropbtn">Appareils</button>
                     <div class="dropdown-content">
-                        <button onclick="toggleFilter('appliance', 'blender')">Blender</button>
-                        <button onclick="toggleFilter('appliance', 'saladier')">Saladier</button>
+                        <button class="filter-btn" data-appliance="blender">Blender</button>
+                        <button class="filter-btn" data-appliance="saladier">Saladier</button>
                     </div>
                 </div>
 
                 <div class="dropdown">
                     <button class="dropbtn">Ustensiles</button>
                     <div class="dropdown-content">
-                        <button onclick="toggleFilter('ustensil', 'cuillère à soupe')">Cuillère à Soupe</button>
-                        <button onclick="toggleFilter('ustensil', 'verres')">Verres</button>
-                        <button onclick="toggleFilter('ustensil', 'presse citron')">Presse citron</button>
+                        <button class="filter-btn" data-ustensil="cuillere à soupe">cuillère à soupe</button>
+                        <button class="filter-btn" data-ustensil="verres">Verres</button>
+                        <button class="filter-btn" data-ustensil="presse citron">Presse citron</button>
                     </div>
                 </div>
             </div>

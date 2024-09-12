@@ -2106,7 +2106,6 @@ recipes.forEach(recipe => {
 
         let ingrValue = document.createElement('label');
         ingrValue.setAttribute('class', 'ingredient-value');
-        console.log(ingr.unit);
         let ingrValueText;
         if (ingr.unit !== undefined){
             ingrValueText = document.createTextNode(ingr.quantity + ingr.unit);
@@ -2190,4 +2189,23 @@ recipes.forEach(recipe => {
     
 })
 
+const filterButtons = document.querySelectorAll('.filter-btn');
 
+filterButtons.forEach(button => {
+    button.addEventListener('click', (event) => {
+        const ingredient = event.target.getAttribute('data-ingredient');
+        if (ingredient) {
+            toggleFilter('ingredient', ingredient);
+        }
+
+        const appliance = event.target.getAttribute('data-appliance');
+        if (appliance) {
+            toggleFilter('appliance', appliance);
+        }
+
+        const ustensil = event.target.getAttribute('data-ustensil');
+        if (ustensil) {
+            toggleFilter('ustensil', ustensil);
+        }
+    });
+});
